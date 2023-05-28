@@ -1,23 +1,14 @@
-
-
 def split(number):
-    ##################################################
-    # Code your program here
-    ##################################################
-    pivot = number[len(number)-1]
-    left = [v for v in number if v < pivot]
-    right = [v for v in number if v > pivot]
-
-    for i, v in enumerate(left):
-        number[i] = v
-    pidx = i+1
-    number[pidx] = pivot
-    for i, v in enumerate(right):
-        number[pidx+i+1] = v
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
 
 
 def main():
-    number = list(map(int, input().split()))
+    # number = list(map(int, input().split()))
+    number = [35, 5, 10, 20, 40, 15]
     split(number)
     print(number)
 
