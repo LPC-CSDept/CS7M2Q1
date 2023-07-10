@@ -13,7 +13,7 @@ def test_main_1():
 
     # main.main()
     number = [35, 5, 10, 20, 40, 15]
-    main.split(number)
+    number = main.split(number)
     sys.stdout = sys.__stdout__
     print('Captured ', captureOut.getvalue())
     lines = captureOut.getvalue().split('\n')
@@ -49,7 +49,7 @@ def test_main_2():
 
     main.main()
     number = [1, 2, 4, 5, 3]
-    main.split(number)
+    number = main.split(number)
     sys.stdout = sys.__stdout__
     print('Captured ', captureOut.getvalue())
     lines = captureOut.getvalue().split('\n')
