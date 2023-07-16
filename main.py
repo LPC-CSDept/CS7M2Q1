@@ -4,12 +4,13 @@ def split(number):
     Code Your Program here
     ########################################
     """
+    return number
 
 
 def main():
     # number = list(map(int, input().split()))
     number = [35, 5, 10, 20, 40, 15]
-    split(number)
+    number = split(number)
     print(number)
 
 
